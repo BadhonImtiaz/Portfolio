@@ -200,7 +200,7 @@ nav {
 }
 
 .skill-javascript {
-    background: rgba(255, 223, 0, 0.05);
+    background: rgba(67, 66, 56, 0.05);
     padding: 30px;
     border-radius: 16px;
     flex: 1;
@@ -217,7 +217,7 @@ nav {
 /* support styles */
 
 .supportBox {
-    background-image: url("/images/handshake.jpg");
+    background-image: url("../images/handshake.jpg");
     border-radius: 16px;
     background-size: cover;
     background-position: center;
