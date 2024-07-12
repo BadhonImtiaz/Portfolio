@@ -113,27 +113,30 @@ nav {
 }
 
 /* coding part styles*/
-.codingCard01{
+.codingCard01 {
     display: flex;
     justify-content: space-between;
     width: 946px;
     margin: 0 auto;
     margin-top: 80px;
 }
-.codingCard02{
+
+.codingCard02 {
     display: flex;
     justify-content: space-between;
     width: 946px;
     margin: 0 auto;
     margin-top: 80px;
 }
-.codingCard03{
+
+.codingCard03 {
     display: flex;
     justify-content: space-between;
     width: 946px;
     margin: 0 auto;
     margin-top: 80px;
 }
+
 .codingTitle {
     color: rgba(13, 19, 33, 0.7);
     font-size: 18px;
@@ -156,5 +159,56 @@ nav {
     background-color: white;
     color: rgb(13, 19, 33);
     font-weight: 600;
+
+}
+
+.inspireVideo {
+    display: flex;
+    border-radius: 16px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+/* skills styles */
+
+
+.skils-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-html {
+    background: rgba(255, 76, 30, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.skill-css {
+    background: rgba(0, 76, 232, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.skill-javascript {
+    background: rgba(255, 223, 0, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.learMoreSkill {
+    color: rgb(13, 19, 33);
+    font-weight: 700;
 
 }
