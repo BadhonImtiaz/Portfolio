@@ -1,0 +1,160 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.azeret-mono-normal {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+
+.myName {
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.topButton {
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    border-radius: 5px;
+    opacity: 0.8;
+    padding: 10px;
+    background-color: white;
+    color: rgb(13, 19, 33);
+    font-weight: 600;
+}
+
+/* banner styles */
+.firstBgImage {
+    background-image: url("/images/Hero-bg.png");
+    width: auto background-repeat: no-repeat;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bannerTitle {
+    color: rgb(13, 19, 33);
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: 0%;
+    width: 998px;
+
+}
+
+.bannerDescription {
+    color: rgb(13, 19, 33);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    width: 852px;
+}
+
+.contactButton {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+}
+
+.development {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sctionTitle {
+    display: flex;
+    width: 852px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(13, 19, 33);
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.sectionDescription {
+    color: rgb(13, 19, 33);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.7;
+    width: 852px;
+}
+
+.sectionBg {
+    background-color: rgba(13, 19, 33, 0.02);
+    border-radius: 10px;
+}
+
+/* coding part styles*/
+.codingCard01{
+    display: flex;
+    justify-content: space-between;
+    width: 946px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.codingCard02{
+    display: flex;
+    justify-content: space-between;
+    width: 946px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.codingCard03{
+    display: flex;
+    justify-content: space-between;
+    width: 946px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.codingTitle {
+    color: rgba(13, 19, 33, 0.7);
+    font-size: 18px;
+    font-weight: 700;
+    width: 390px;
+}
+
+.codeDiscreption {
+    color: rgb(13, 19, 33);
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.learnMoreButton {
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.8;
+    padding: 10px;
+    background-color: white;
+    color: rgb(13, 19, 33);
+    font-weight: 600;
+
+}
