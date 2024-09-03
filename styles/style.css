@@ -1,18 +1,19 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-
+/* Global Styles */
 .azeret-mono-normal {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* nav styles */
+/* Responsive Navigation Styles */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 100px;
+    padding: 20px 40px;
 }
 
 .myName {
@@ -22,7 +23,6 @@ nav {
 }
 
 .topButton {
-    box-sizing: border-box;
     border: 1px solid rgb(13, 19, 33);
     border-radius: 5px;
     opacity: 0.8;
@@ -30,12 +30,15 @@ nav {
     background-color: white;
     color: rgb(13, 19, 33);
     font-weight: 600;
+    cursor: pointer;
 }
 
-/* banner styles */
+/* Banner Styles */
 .firstBgImage {
     background-image: url("/images/Hero-bg.png");
-    width: auto background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
 }
 
 .banner {
@@ -43,6 +46,7 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .banner img {
@@ -52,34 +56,32 @@ nav {
 
 .bannerTitle {
     color: rgb(13, 19, 33);
-    font-size: 38px;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 68px;
-    letter-spacing: 0%;
-    width: 998px;
-
+    line-height: 1.2;
+    margin-top: 20px;
 }
 
 .bannerDescription {
     color: rgb(13, 19, 33);
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0%;
-    width: 852px;
+    line-height: 1.5;
+    max-width: 80%;
 }
 
 .contactButton {
     background-color: black;
     color: white;
     border-radius: 8px;
-    width: 200px;
-    font-size: 20px;
+    width: 150px;
+    font-size: 16px;
     padding: 10px 15px 10px 15px;
     margin-top: 20px;
     cursor: pointer;
 }
 
+/* Section Styles */
 .development {
     margin-top: 50px;
     display: flex;
@@ -89,67 +91,64 @@ nav {
 }
 
 .sctionTitle {
-    display: flex;
-    width: 852px;
-    flex-direction: column;
-    align-items: center;
     color: rgb(13, 19, 33);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
-    text-align: center;
 }
 
 .sectionDescription {
     color: rgb(13, 19, 33);
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 1rem;
     opacity: 0.7;
-    width: 852px;
+    max-width: 80%;
 }
 
 .sectionBg {
     background-color: rgba(13, 19, 33, 0.02);
     border-radius: 10px;
+    padding: 20px;
+}
+.inspireVideo{
+    margin-top: 10px;
 }
 
-/* coding part styles*/
-.codingCard01 {
+/* Coding Cards Styles */
+.codingCard01, .codingCard02, .codingCard03 {
     display: flex;
     justify-content: space-between;
-    width: 946px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 40px;
+    gap: 20px; /* Adjust the gap between the image and the text */
+    align-items: center; /* Aligns content vertically */
 }
 
-.codingCard02 {
-    display: flex;
-    justify-content: space-between;
-    width: 946px;
-    margin: 0 auto;
-    margin-top: 80px;
+/* Specific Styling for Image Alignment */
+.codingCard01 section, .codingCard03 section {
+    order: 1; /* Text appears first */
+    flex: 1;
 }
 
-.codingCard03 {
-    display: flex;
-    justify-content: space-between;
-    width: 946px;
-    margin: 0 auto;
-    margin-top: 80px;
+.codingCard01 div, .codingCard03 div {
+    order: 2; /* Image appears second */
+    flex: 1;
 }
 
-.codingTitle {
-    color: rgba(13, 19, 33, 0.7);
-    font-size: 18px;
-    font-weight: 700;
-    width: 390px;
+.codingCard02 section {
+    order: 2; /* Text appears second */
+    flex: 1;
 }
 
-.codeDiscreption {
-    color: rgb(13, 19, 33);
-    font-size: 12px;
-    font-weight: 400;
+.codingCard02 div {
+    order: 1; /* Image appears first */
+    flex: 1;
+}
 
+/* Styling the Images */
+.codingCard01 img, .codingCard02 img, .codingCard03 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds a soft border radius */
 }
 
 .learnMoreButton {
@@ -157,61 +156,31 @@ nav {
     border: 1px solid rgb(13, 19, 33);
     opacity: 0.8;
     padding: 10px;
+    border-radius: 3px;
     background-color: white;
     color: rgb(13, 19, 33);
     font-weight: 600;
+    cursor: pointer;
 
 }
 
-.inspireVideo {
-    display: flex;
-    border-radius: 16px;
-    margin-top: 60px;
-    align-items: center;
-}
 
-
-/* skills styles */
-
-
+/* Skills Section */
 .skils-container {
     margin-top: 80px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.skill-html {
+.skill-html, .skill-css, .skill-javascript {
     background: rgba(255, 76, 30, 0.05);
     padding: 30px;
     border-radius: 16px;
-    flex: 1;
+    flex: 1 1 250px;
     max-width: 300px;
     box-sizing: border-box;
-}
-
-.skill-css {
-    background: rgba(0, 76, 232, 0.05);
-    padding: 30px;
-    border-radius: 16px;
-    flex: 1;
-    max-width: 300px;
-    box-sizing: border-box;
-}
-
-.skill-javascript {
-    background: rgba(67, 66, 56, 0.05);
-    padding: 30px;
-    border-radius: 16px;
-    flex: 1;
-    max-width: 300px;
-    box-sizing: border-box;
-}
-
-.learMoreSkill {
-    color: rgb(13, 19, 33);
-    font-weight: 700;
-
 }
 
 /* support styles */
@@ -222,15 +191,14 @@ nav {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 920px;
-    height: 250px;
-    margin-top: 80px;
-    text-align: center;
+    max-width: 100%; /* Allows the box to adjust its size */
+    width: 67%; /* Makes it responsive and centered */
+    height: auto; /* Adjusts height to keep the aspect ratio */
     padding: 20px;
-    margin-left: 200px;
+    margin: 40px auto; /* Centers the box horizontally */
+    text-align: center;
 }
 
 
@@ -283,7 +251,6 @@ nav {
     margin-top: 30px;
     cursor: pointer;
 }
-
 /* footer style */
 
 .footer {
@@ -314,4 +281,27 @@ nav {
 .social-icon {
     width: 24px;
     height: 24px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bannerTitle {
+        font-size: 1.8rem;
+    }
+
+    .codingCard01, .codingCard02, .codingCard03 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
