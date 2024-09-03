@@ -35,7 +35,7 @@ nav {
 
 /* Banner Styles */
 .firstBgImage {
-    background-image: url("/images/Hero-bg.png");
+    background-image: url("../images/Hero-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 0;
